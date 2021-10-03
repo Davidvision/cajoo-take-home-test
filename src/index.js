@@ -1,4 +1,5 @@
-import { Drug, Pharmacy } from "./classes/pharmacy";
+import { Pharmacy } from "./classes/pharmacy";
+import { Drug } from "./classes/drug";
 
 import fs from "fs";
 
@@ -17,7 +18,7 @@ for (let elapsedDays = 0; elapsedDays < 30; elapsedDays++) {
 }
 
 /* eslint-disable no-console */
-fs.writeFile("output2.txt", log.toString(), err => {
+fs.writeFile("output.txt", log.toString(), err => {
   if (err) {
     console.log("error");
   } else {
